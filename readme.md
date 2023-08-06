@@ -22,4 +22,5 @@ graph TD
     Client -- domain-fronting offer --> Broker
     Broker -- answer --> Client
 ```
+
 NB: The diagram provides a simplified overview of the Snowflake architecture. The actual communication involves more complex interactions, but the diagram captures the main components and their connections.

@@ -1,10 +1,10 @@
 let
   pkgs = import <nixpkgs> {};
   serveHttp = pkgs.mkShell {
-    buildInputs = [pkgs.python3];
+    buildInputs = [pkgs.python311Packages.flask];
 
     shellHook = ''
-      python -m http.server --bind 0.0.0.0
+      python app.py
     '';
   };
 in

@@ -40,3 +40,32 @@ h1 {
 iframe {
   color: inherit;
 }
+
+body.error-404 {
+  background-color: #38383d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.error-404 .center-content {
+  text-align: center;
+}
+
+.error-404 h1 {
+  font-size: 6em;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  animation: glowAnimation 1.3s ease-in-out infinite alternate;
+}
+
+.error-404 p {
+  font-size: 20px;
+  color: white;
+}
+
+.error-404 iframe {
+  color: inherit;
+}

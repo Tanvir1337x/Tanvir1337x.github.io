@@ -1,0 +1,42 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #38383d;
+}
+
+.center-content {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  animation: glowAnimation 1.3s ease-in-out infinite alternate;
+}
+
+@keyframes glowAnimation {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes rainbowAnimation {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+iframe {
+  color: inherit;
+}

@@ -8,7 +8,10 @@ The site currently serves [snowflake](https://snowflake.torproject.org). It's me
 
 ```mermaid
 graph TD
-    Client[Client] -- domain-frontend offer --> Broker[Broker] -- answer --> Client -- WebRTC --> Snowflake
-    Broker -- answer --> Snowflake(Snowflake Proxy) -- offer --> Broker
+    Client[Client] -- domain-fronting offer --> Broker[Broker] -- answer --> Client
+    Client -- WebRTC --> Snowflake(Snowflake Proxy)
+    Broker -- answer --> Snowflake
+    Snowflake -- offer --> Broker
     Snowflake --> Bridge(Bridge) --> Destination
 ```
+NB: The diagram provides a simplified overview of the Snowflake architecture. The actual communication involves more complex interactions, but the diagram captures the main components and their connections.

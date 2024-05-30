@@ -1,4 +1,4 @@
-## About
+# About
 
 (W.I.P) My minimal site.
 

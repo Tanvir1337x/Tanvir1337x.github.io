@@ -1,6 +1,6 @@
 # About
 
-(W.I.P) My minimal site.
+My minimal site, still a work in progress.
 
 ## Note
 
@@ -23,4 +23,4 @@ graph TD
     Broker -- answer --> Client
 ```
 
-NB: The diagram provides a simplified overview of the Snowflake architecture. The actual communication involves more complex interactions, but the diagram captures the main components and their connections.
+The diagram provides a simplified overview of the Snowflake architecture. The actual communication involves more complex interactions, but the diagram captures the main components and their connections.

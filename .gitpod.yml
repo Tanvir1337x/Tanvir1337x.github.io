@@ -2,6 +2,7 @@ image: gitpod/workspace-full:latest
 
 tasks:
   - name: Run python flask webserver
+    init: python3 -m pip install flask
     command: python3 app.py
 
 ports:

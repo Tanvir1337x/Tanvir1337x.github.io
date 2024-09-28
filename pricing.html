@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.5" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#CC80FF" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Pricing</title>
+  </head>
+  <body>
+    <div class="container mx-auto px-4 py-16 max-w-6xl">
+      <h1 class="text-4xl font-extrabold mb-8 text-center">Pricing</h1>
+
+      <p class="text-xl text-center mb-12">
+        Choose the option that fits you best!
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <!-- Free Tier -->
+        <Card>
+          <CardHeader>
+            <div class="flex items-center justify-between">
+              <CardTitle class="flex items-center justify-between">
+                Free Tier
+                <Zap class="w-6 h-6 text-yellow-400" />
+              </CardTitle>
+              <Badge variant="secondary">(Basic)</Badge>
+            </div>
+            <CardDescription
+              >For Snowflake users looking for basic features</CardDescription
+            >
+          </CardHeader>
+          <CardContent>
+            <p class="text-3xl font-bold mb-4">$0.00</p>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <Check class="w-5 h-5 mr-2 text-green-500" />
+                Basic features (seriously basic)
+              </li>
+              <li class="flex items-center">
+                <Check class="w-5 h-5 mr-2 text-green-500" />
+                No hidden fees (because who has time for that?)
+              </li>
+              <li class="flex items-center">
+                <X class="w-5 h-5 mr-2 text-red-500" />
+                No premium support (you're on your own)
+              </li>
+            </ul>
+          </CardContent>
+          <CardFooter>
+            <button variant="outline" class="w-full">Start now</button>
+          </CardFooter>
+        </Card>
+
+        <!-- Pro Tier -->
+        <Card class="border-primary shadow-lg transform scale-105">
+          <CardHeader>
+            <div class="flex items-center justify-between">
+              <CardTitle class="flex items-center">
+                Pro Tier
+                <Crown class="w-6 h-6 ml-2 text-yellow-400" />
+              </CardTitle>
+              <Badge variant="secondary">(PREFERRED)</Badge>
+            </div>
+            <CardDescription
+              >For those who want more (but it's still basic)</CardDescription
+            >
+          </CardHeader>
+          <CardContent>
+            <p class="text-3xl font-bold mb-4">$0.00</p>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <Check class="w-5 h-5 mr-2 text-green-500" />
+                All Free features (but still not fancy)
+              </li>
+              <li class="flex items-center">
+                <Check class="w-5 h-5 mr-2 text-green-500" />
+                Premium support (we might answer… maybe)
+              </li>
+              <li class="flex items-center">
+                <Check class="w-5 h-5 mr-2 text-green-500" />
+                Extra sigma stuff (whatever that means)
+              </li>
+            </ul>
+          </CardContent>
+          <CardFooter>
+            <button variant="default" class="w-full">Go Pro</button>
+          </CardFooter>
+        </Card>
+
+        <!-- Enterprise Tier -->
+        <Card>
+          <CardHeader>
+            <div class="flex items-center justify-between">
+              <CardTitle class="flex items-center justify-between">
+                Enterprise Tier
+                <Building class="w-6 h-6 text-primary" />
+              </CardTitle>
+              <Badge variant="secondary">(Advanced)</Badge>
+            </div>
+            <CardDescription>For companies with unique needs</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p class="text-3xl font-bold mb-4">$0.00</p>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <Check class="w-5 h-5 mr-2 text-green-500" />
+                All Pro features (yes, still included)
+              </li>
+              <li class="flex items-center">
+                <Check class="w-5 h-5 mr-2 text-green-500" />
+                24/7 support (good luck with that)
+              </li>
+              <li class="flex items-center">
+                <Check class="w-5 h-5 mr-2 text-green-500" />
+                Custom solutions (unlikely, but who knows?)
+              </li>
+            </ul>
+          </CardContent>
+          <CardFooter>
+            <a
+              href="mailto:support@snowflake.com"
+              class="w-full inline-block text-center border border-gray-300 rounded py-2"
+            >
+              <Mail class="w-5 h-5 mr-2 inline-block" />
+              Contact Us (we might reply, or not)
+            </a>
+          </CardFooter>
+        </Card>
+      </div>
+
+      <div class="text-center">
+        <p class="text-lg mb-4">Still not convinced? That's okay.</p>
+        <!-- Warning: Rick Roll -->
+        <a
+          href="https://www.youtube.com/watch?v=GtL1huin9EE"
+          class="text-primary underline"
+        >
+          Learn more about our pricing
+        </a>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="static/script.js"></script>
+  </body>
+</html>

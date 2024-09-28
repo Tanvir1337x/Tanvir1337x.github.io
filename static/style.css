@@ -69,3 +69,106 @@ body.error-404 {
 .error-404 iframe {
   color: inherit;
 }
+
+/* Pricing page specific styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-cols-1 {
+  grid-template-columns: 1fr;
+}
+
+.md\:grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.card-header {
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.card-content {
+  margin-bottom: 1.5rem;
+}
+
+.card-footer {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-outline {
+  border: 2px solid #4a5568;
+  color: #4a5568;
+}
+
+.button-default {
+  background-color: #4a5568;
+  color: #fff;
+}
+
+.text-primary {
+  color: #4a90e2;
+}
+
+.underline {
+  text-decoration: underline;
+}

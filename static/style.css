@@ -181,7 +181,9 @@ body.error-404 {
   background: rgba(195, 143, 143, 0.8);
   border-radius: 50%;
   pointer-events: none;
-  box-shadow: 0 0 10px rgba(195, 143, 143, 0.8), 0 0 20px rgba(195, 143, 143, 0.8);
+  box-shadow:
+    0 0 10px rgba(195, 143, 143, 0.8),
+    0 0 20px rgba(195, 143, 143, 0.8);
   animation: fadeOut 0.5s forwards;
 }
 

@@ -11,18 +11,17 @@ The site currently serves [snowflake](https://snowflake.torproject.org). It's me
 ```mermaid
 graph TD
     subgraph Internet
-        Client[Client] -- WebRTC --> Snowflake(Snowflake Proxy)
+        Client[Client] -- WebRTC (bidirectional) --> Snowflake(Snowflake Proxy)
     end
 
     subgraph Snowflake Network
-        Snowflake -- offer --> Broker(Broker)
-        Broker -- answer --> Snowflake
-        Snowflake -- WebRTC --> Bridge(Bridge)
+        Snowflake -- WebRTC (offer/answer) --> Broker(Broker)
+        Broker -- WebRTC (answer/offer) --> Snowflake
+        Snowflake -- WebRTC --> Bridge(Tor Bridge)
         Bridge -- Tor --> Destination(Destination)
     end
 
-    Client -- domain-fronting offer --> Broker
-    Broker -- answer --> Client
+    Client -- domain-fronted HTTPS --> Broker
 ```
 
 The diagram provides a simplified overview of the Snowflake architecture. The actual communication involves more complex interactions, but the diagram captures the main components and their connections.

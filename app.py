@@ -11,6 +11,18 @@ def serve_index():
 def serve_about():
     return render_template("about.html")
 
+@app.route("/theme")
+def serve_theme():
+    return render_template("toggle-theme.html")
+
+@app.route("/toggle-theme")
+def serve_toggle_theme():
+    return render_template("toggle-theme.html")
+
+@app.route("/theme-toggle")
+def serve_theme_toggle():
+    return render_template("toggle-theme.html")
+
 @app.route("/pricing")
 def serve_pricing():
     return render_template("pricing.html")

@@ -22,3 +22,44 @@ class NeonTrail {
 }
 
 new NeonTrail();
+
+let styleElement = document.getElementById("dynamicStyles");
+
+const getInitialTheme = () => {
+  const storedTheme = localStorage.getItem("theme");
+  return storedTheme || "default";
+};
+
+let currentTheme = getInitialTheme();
+document.documentElement.className = currentTheme;
+
+const toggleButtons = document.querySelectorAll(".theme-toggle");
+toggleButtons.forEach((button) => {
+  button.setAttribute("aria-pressed", currentTheme === "rosybrown");
+});
+
+const injectCSS = (css) => {
+  styleElement.textContent = css;
+};
+
+const switchTheme = (button) => {
+  currentTheme = currentTheme === "default" ? "rosybrown" : "default";
+  document.documentElement.className = currentTheme;
+  button.setAttribute("aria-pressed", currentTheme === "rosybrown");
+  localStorage.setItem("theme", currentTheme);
+  injectCSS(ANIMATION.css);
+};
+
+const toggleTheme = (button) => {
+  if (!document.startViewTransition) {
+    switchTheme(button);
+  } else {
+    document.startViewTransition(() => switchTheme(button));
+  }
+};
+
+document.addEventListener("click", (event) => {
+  if (event.target.classList.contains("theme-toggle")) {
+    toggleTheme(event.target);
+  }
+});

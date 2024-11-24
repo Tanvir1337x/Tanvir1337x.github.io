@@ -2,7 +2,7 @@
 
 My minimal site, still a work in progress.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/TanvirOnGH/tanvirongh.github.io)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Tanvir1337x/Tanvir1337x.github.io)
 
 ## Note
 
